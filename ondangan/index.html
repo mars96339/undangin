@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- countdown -->
+     <link rel="stylesheet" href="css/simplyCountdown.theme.default.css">
+     <script src="js/simplyCountdown.min.js"></script>
+
+    <title>undangan testing</title>
+</head>
+<body>
+    
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+        <main>
+            <h4>kepada bpk/ibu/saudara/i,</h4>
+            <h1>Mars & Dirinya Sendiri</h1>
+            <p>akan melakukan resepsi pernikahan dalam:</p>
+            <div class="simply-countdown"></div>
+            <a href="#undangan" class="btn btn-lg mt-4">Lihat Undangan</a>
+
+
+        </main>
+    </section>
+
+    <script>
+        simplyCountdown('.simply-countdown', {
+            year: 2024, // required
+            month: 12, // required
+            day: 31, // required
+            hours: 23, // Default is 0 [0-23] integer
+            minutes: 59, // Default is 0 [0-59] integer
+            seconds: 59, // Default is 0 [0-59] integer
+            words: { //words displayed into the countdown
+                days: { singular: 'Hari', plural: 'Hari' },
+                hours: { singular: 'Jam', plural: 'Jam' },
+                minutes: { singular: 'Menit', plural: 'Menit' },
+                seconds: { singular: 'Detik', plural: 'Detik' }
+            },
+        });
+    </script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
